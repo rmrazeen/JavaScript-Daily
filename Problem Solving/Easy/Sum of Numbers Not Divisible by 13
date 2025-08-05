@@ -11,7 +11,7 @@ Given two integers **X** and **Y**, find the sum of all integers between them (i
 
 ## 🧑‍💻 Code
 
-```javascript
+```js
 function sumNonDivisibleBy13(X, Y) {
     let sum = 0;
     const start = Math.min(X, Y); // Determine the smaller number
