@@ -1,0 +1,50 @@
+Sum of Numbers Not Divisible by 13
+This JavaScript program calculates the sum of all numbers between two integers X and Y (inclusive) that are not divisible by 13.
+
+Code
+javascript
+function sumNonDivisibleBy13(X, Y) {
+    let sum = 0;
+    const start = Math.min(X, Y); // Determine the smaller number
+    const end = Math.max(X, Y);   // Determine the larger number
+
+    for (let i = start; i <= end; i++) {
+        if (i % 13 !== 0) { // Check if the number is NOT divisible by 13
+            sum += i;
+        }
+    }
+    return sum;
+}
+
+// Example usage:
+const X = 100;
+const Y = 200;
+const result = sumNonDivisibleBy13(X, Y);
+console.log(`Sum of numbers between ${X} and ${Y} not divisible by 13: ${result}`);
+Explanation
+Input Handling
+The function sumNonDivisibleBy13(X, Y) takes two integers, X and Y.
+
+Determine Range
+
+Math.min(X, Y) ensures the loop starts from the smaller number.
+
+Math.max(X, Y) ensures the loop runs up to the larger number.
+
+Loop Through Numbers
+The for loop iterates from start to end (inclusive).
+
+Check Divisibility
+
+i % 13 !== 0 checks if a number is not divisible by 13.
+
+If true, the number is added to the sum.
+
+Return Result
+The function returns the total sum of numbers not divisible by 13.
+
+Example Output
+For X = 100 and Y = 200, the program calculates the sum of all numbers between them (inclusive) that are not divisible by 13 and logs the result:
+
+text
+Sum of numbers between 100 and 200 not divisible by 13: <result>
