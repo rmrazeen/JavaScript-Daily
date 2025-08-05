@@ -22,3 +22,4 @@ function hasMoreFoursThanZeros(n) {
 // Test Case
 console.log(hasMoreFoursThanZeros([1, 2, 4, 0, 4])); // true
 
+
