@@ -1,8 +1,20 @@
-Sum of Numbers Not Divisible by 13
-This JavaScript program calculates the sum of all numbers between two integers X and Y (inclusive) that are not divisible by 13.
 
-Code
-javascript
+
+````
+# Sum of Numbers Not Divisible by 13 🧮
+
+This JavaScript program calculates the **sum of all numbers between two integers X and Y (inclusive)** that are **not divisible by 13**.
+
+---
+
+## 📄 Problem Statement
+Given two integers **X** and **Y**, find the sum of all integers between them (inclusive) that are **not divisible by 13**.
+
+---
+
+## 🧑‍💻 Code
+
+```javascript
 function sumNonDivisibleBy13(X, Y) {
     let sum = 0;
     const start = Math.min(X, Y); // Determine the smaller number
@@ -21,30 +33,56 @@ const X = 100;
 const Y = 200;
 const result = sumNonDivisibleBy13(X, Y);
 console.log(`Sum of numbers between ${X} and ${Y} not divisible by 13: ${result}`);
-Explanation
-Input Handling
-The function sumNonDivisibleBy13(X, Y) takes two integers, X and Y.
+````
 
-Determine Range
+---
 
-Math.min(X, Y) ensures the loop starts from the smaller number.
+## 📝 Explanation
 
-Math.max(X, Y) ensures the loop runs up to the larger number.
+### 1. Input Handling
 
-Loop Through Numbers
-The for loop iterates from start to end (inclusive).
+* The function `sumNonDivisibleBy13(X, Y)` accepts two integers: **X** and **Y**.
 
-Check Divisibility
+### 2. Determine Range
 
-i % 13 !== 0 checks if a number is not divisible by 13.
+* `Math.min(X, Y)` ensures the loop starts from the smaller number.
+* `Math.max(X, Y)` ensures the loop runs up to the larger number.
 
-If true, the number is added to the sum.
+### 3. Loop Through Numbers
 
-Return Result
-The function returns the total sum of numbers not divisible by 13.
+* Iterate from **start** to **end** (inclusive).
 
-Example Output
-For X = 100 and Y = 200, the program calculates the sum of all numbers between them (inclusive) that are not divisible by 13 and logs the result:
+### 4. Check Divisibility by 13
 
-text
+* For each number `i`, check:
+
+  ```js
+  if (i % 13 !== 0)
+  ```
+
+  * If **true**, add `i` to the sum.
+
+### 5. Return Result
+
+* After the loop, return the total **sum** of numbers **not divisible by 13**.
+
+---
+
+## 🖥 Example Output
+
+For **X = 100** and **Y = 200**, the program will output:
+
+```
 Sum of numbers between 100 and 200 not divisible by 13: <result>
+```
+
+(Replace `<result>` with the actual calculated value.)
+
+
+
+---
+
+```
+
+---
+```
